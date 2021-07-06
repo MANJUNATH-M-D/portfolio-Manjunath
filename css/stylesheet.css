@@ -1,0 +1,794 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+.image-fluid{
+    width: 100%;
+}
+.max-width{
+    width: 1200px;
+    margin: auto;
+}
+
+                            /* header part/navigation part */
+                            .head{
+                                width: 100%;
+                                margin: auto;
+                                background-color: burlywood;
+                            }
+                            #nav1{
+                                position: fixed;
+                                z-index: 1;
+                            }
+                            nav{
+                               
+                                width: 100%;
+                                margin: auto;
+                                }
+                                nav .logo{
+                                    font-size: 30px;
+                                   
+                                }
+                                nav ul{
+                                    float: right;
+                                   
+                                }
+                                nav ul li{
+                                    display: inline-block;
+                                    margin: 5px 5px;
+                                }
+                                nav ul li a{
+                                    /* color: white; */
+                                }
+
+                                .navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link{
+                                    transition: 0.3s;
+                                }
+
+                                .navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover {
+                                    color: rgba(255,255,255,.75);
+                                    background-color: crimson;
+                                    border-radius: 3px;
+                                }
+/* .header{
+    background-color: #1b1616;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.header .logo{
+color: white;
+height: 50px;
+line-height: 50px;
+font-size: 24px;
+float: left;
+font-weight: bold;
+}
+
+.header nav{
+float: right;
+}
+.header nav ul {
+display: flex;
+}
+.header nav ul li{
+list-style: none;
+}
+.header nav ul li a{
+height: 50px;
+line-height: 50px;
+    padding: 0px 20px;
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    display: block;
+}
+.header nav ul li a:hover, .header nav ul li a.active{
+    color: white;
+    background: linear-gradient(90deg, rgba(179,59,59,1) 28%, rgba(185,19,52,1) 100%);
+}
+.menu-bar{
+    color: white;
+    float: right;
+    line-height: 50px;
+    font-size: 24px;
+    cursor: pointer;
+    display: none;
+} */
+/* .main{
+    display: flex;
+    justify-content: space-between;
+}
+.main .logo{
+    padding: 15px 15px;
+    font-size: 30px;
+    transition: 00.5s;
+}
+.main .logo:hover{
+    transform: scaleX(1.2);
+    
+}
+.main .logo a{
+ text-decoration: none;
+ color: white;
+ font-weight: 600;
+}
+.main .menu{
+
+}
+.main .menu ul{
+    display: flex;
+    list-style: none;
+
+}
+.main .menu ul li{
+    margin-left: 50px;
+    padding: 7px 20px;
+    margin: 15px;
+    transition:  0.5s;
+    border-radius: 3px;
+}
+.main .menu ul li a{
+list-style: none;
+text-decoration: none;
+color: white;
+font-weight: 600;
+}
+.main .menu ul li a.active,
+.main .menu ul li:hover{
+    background: linear-gradient(90deg, rgba(179,59,59,1) 28%, rgba(185,19,52,1) 100%);
+}
+
+@media screen and (max-width: 768px)  {
+    #logo1{
+        width: 100%;
+        
+    }
+    ul{
+        width: 100%;
+        display: block;
+    }
+} */
+
+
+/* banner part */
+.banner{
+    /* border: 1px solid red; */
+    background: rgb(1,1,1);
+    background: linear-gradient(90deg, rgba(1,1,1,1) 50%, rgba(198,68,68,1) 100%);
+    height: 450px;
+}
+.full{
+position: relative;
+}
+.name1{
+color: white;
+
+position: absolute;
+top: 175px;
+}
+.name1 #np{
+    font-size: 23px;
+    position: absolute;
+    left: 4px;
+    letter-spacing: 2px;
+    top: -10px;
+}
+.name1 #nh1{
+    font-size: 70px;
+}
+.name1 #np2{
+    position: absolute;
+    left: 190px;
+    top: 80px;
+    font-size: 22px;
+    letter-spacing: 3px;
+
+}
+.name1 #np2 b{
+    color: crimson;
+    animation-name: animate;
+    animation-duration: 0.8s ;
+    animation-iteration-count: infinite;
+
+}
+@keyframes animate{
+    0%{color: crimson;}
+    25%{color: darkcyan;}
+    50%{color: rgb(31, 167, 42);}
+    100%{color: rgb(99, 4, 4);}
+    
+}
+
+
+
+/* info banner */
+.info{
+    /* border: 1px solid red; */
+    background: linear-gradient(90deg, rgba(223,222,222,1) 45%, rgba(255,255,255,1) 100%);
+    height: 350px;
+    padding: 20px 0px;
+
+}
+.sub-info{
+text-align: center;
+}
+ h2{
+    font-size: 35px;
+    letter-spacing: 7px;
+}
+.icon{
+margin-top: 15px;
+}
+.icon label{
+font-weight: bold;
+}
+.icon .fa{
+margin-right: 5px;
+}
+.icon #name{
+
+}
+
+/* profile */
+.profile{
+text-align: center;
+height: 300px;
+background: #c0392b;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #8e44ad, #c0392b);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #8e44ad, #c0392b); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+color: white;
+/* border: 1px solid red; */
+}
+.profile .pro{
+    width: 70%;
+    margin: auto;
+    padding-top: 80px;
+    padding-bottom: 20px;
+}
+.profile .para{
+
+}
+
+
+/* education */
+.education{
+    background: linear-gradient(90deg, rgba(223,222,222,1) 45%, rgba(255,255,255,1) 100%);  
+    height: 450px;
+}
+.main-box{
+    display: flex;
+
+}
+.box{
+    /* border: 1px solid red; */
+    width: 20%;
+    height: 300px;
+    margin: 3%;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+    transition: 0.8s ease;
+    /* background-color: cadetblue; */
+    background: linear-gradient(to left, #136a8a, #267871);
+/* background: linear-gradient(to right, #BD3F32, #CB356B);  */
+/* background: linear-gradient(to right, #2980b9, #2c3e50); */
+}
+
+.sub-box{
+text-align: center;
+color: white;
+padding-top: 25px;
+
+
+}
+.edu-h2{
+    padding-top: 25px;
+    
+    text-align: center;
+}
+.sub-box-p{
+font-size: 14px;
+margin-top: -6px;
+}
+.sub-box-h3{
+    color: gold;
+    font-size: 20px;
+}
+.sub-box-h4{
+margin: 15px;
+font-size: 15px;
+}
+.box:hover{
+    transform: scale(1.2);
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+}
+.box .sub-box i{
+    font-size: 50px;
+}
+
+/* skills */
+.skill{
+width: 100%;
+background-color: #f9dada;
+}
+.container{
+width: 500px;
+margin: 0px auto 0;
+padding: 20px;
+}
+.sh1{
+    text-align: center;
+    font-size: 42px;
+    letter-spacing: 7px;
+}
+.skill ul li{
+    position: relative;
+    list-style: none;
+    margin: 40px 0;
+
+}
+.skill ul li::before{
+    content: "";
+    position: absolute;
+    top: calc(100% + 10px);
+    left: 0;
+    width: 100%;
+    height: 15px;
+    background-color: rgb(199, 151, 243);
+    border-radius: 1000px;
+}
+
+.skill ul li::after{
+    content: "";
+    position: absolute;
+    top: calc(100% + 10px);
+    left: 0;
+    width: 0;
+    height: 15px;
+    background: linear-gradient(to right, #ff0084, #33001b);
+    border-radius: 1000px;
+    animation-duration: 0.7s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+}
+
+.skill ul li.html::after{
+    animation-name: html;
+}
+@keyframes html{
+    to{
+        width: 90%;
+    }
+}
+
+.skill ul li.css::after{
+    animation-name: css;
+}
+@keyframes css{
+    to{
+        width: 70%;
+    }
+}
+
+.skill ul li.java::after{
+    animation-name: java;
+}
+@keyframes java{
+    to{
+        width: 70%;
+    }
+}
+
+.skill ul li.jq::after{
+    animation-name: jq;
+}
+@keyframes jq{
+    to{
+        width: 90%;
+    }
+}
+
+.skill ul li.bs::after{
+    animation-name: bs;
+}
+@keyframes bs{
+    to{
+        width: 75%;
+    }
+}
+
+.skill ul li.ap::after{
+    animation-name: ap;
+}
+@keyframes ap{
+    to{
+        width: 60%;
+    }
+}
+
+/* projects */
+            /* used from education */
+           
+/* footer */
+footer{
+    background: #111;
+    padding: 15px 23px;
+    color: #fff;
+    text-align: center;
+}
+footer span a{
+    color: crimson;
+    text-decoration: none;
+}
+footer span a:hover{
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* responsive media query start */
+
+/* ipad-pro */
+@media only screen  and (min-width: 992px) and (max-width: 1192px){
+    .max-width{
+        max-width: 960px;
+    }
+    .sub-box-h3{
+        font-size: 16px;
+    }
+    .sub-box-h4 {
+        font-size: 13px;
+    }
+    .sub-box-p {
+        font-size: 12px;
+        margin-top: -6px;
+    }
+}
+
+/* ipad */
+@media only screen and (min-width: 768px) and (max-width: 991px){
+    .max-width{
+        max-width: 720px;
+    }
+    .profile .pro{
+        padding-top: 55px;
+    }
+    .profile .para{
+        font-size: 14px;
+    }
+    .box{
+        width: 42%;
+        display: inline-block;
+    }
+    .main-box{
+        display: inline-block;
+    }
+    .education{
+        height: 810px;
+    }
+    .box .sub-box i{
+        font-size: 40px;
+    }
+    .sub-box-h3{
+        font-size: 17px;
+    }
+    .sub-box-p{
+        font-size: 12px;
+    }
+    .container{
+        width: 425px;
+        padding: 10px;
+    }
+    .sh1{
+        font-size: 35px;
+        letter-spacing: 5px;
+    }
+    .skillul li{
+        margin: 32px 0;
+    }
+    .name1 #h1{
+        font-size: 50px;
+    }
+    .name1 #np{
+        font-size: 15px;
+        letter-spacing: 1px;
+    }
+    .name1 #nh1{
+        font-size: 50px;
+    }
+    .name1 #np2{
+        left: 140px;
+        top: 50px;
+        font-size: 15px;
+        letter-spacing: 1px;
+    }
+    .banner{
+        height: 400px;
+    }
+
+
+}
+
+/* Mobile */
+@media only screen and (min-width: 539px) and (max-width: 767px){
+    
+    .max-width{
+        max-width: 500px;
+    }
+    .name1 #nh1{
+        font-size: 35px;
+    }
+    .name1 #np {
+        font-size: 10px;
+        left: 3px;
+        letter-spacing: 1px;
+        top: -6px;
+    }
+    .name1 #np2 {
+        left: 100px;
+        top: 35px;
+        font-size: 10px;
+        letter-spacing: 1px;
+    }
+    .banner{
+        height: 300px;
+    }
+    .name1{
+        top: 125px;
+    }
+    h2 {
+        font-size: 25px;
+        letter-spacing: 3px;
+    }
+    .icon label {
+        font-size: 12px;
+    }
+    .icon #name {
+        font-size: 14px;
+    }
+    .info{
+        height: 250px;
+    }
+    .profile .pro {
+        width: 95%;
+        padding-top: 45px;
+    }
+    .profile .para {
+        font-size: 13px;
+    }
+    .edu-h2{
+        font-size: 20px;
+    }
+    .education{
+        height: 1352px;
+    }
+    .main-box{
+        display: block;
+    }
+    .box{
+        width: 55%;
+        margin: auto;
+        margin-top: 20px;
+    }
+    .container{
+        width: 350px;
+    }
+    .sh1{
+        font-size: 25px;
+    }
+
+}
+
+@media only screen and (min-width: 414px) and (max-width: 538px){
+    .max-width{
+        max-width: 400px;
+    }
+    .name1 #nh1 {
+        font-size: 42px;
+    }
+    .name1 #np {
+        font-size: 12px;
+        left: 2px;
+        letter-spacing: 2px;
+        top: -7px;
+    }
+    .name1 #np2 {
+        left: 110px;
+        top: 40px;
+        font-size: 12px;
+        letter-spacing: 2px;
+    }
+    .banner{
+        height: 230px;
+    }
+    .name1{
+        top: 90px;
+        left: 38px;
+    }
+    .info{
+        height: 325px;
+    }
+    h2 {
+        font-size: 22px;
+        letter-spacing: 3px;
+    }
+    .icon .fa {
+        font-size: 11px;
+    }
+    .icon #name {
+        font-size: 14px;
+    }
+    .profile .pro {
+        width: 90%;
+        padding-top: 35px;
+    }
+    .profile .para {
+        font-size: 12px;
+    }
+    .profile{
+        height: 200px;
+    }
+    .edu-h2 {
+        padding-top: 20px;
+    }
+    .education{
+        height: 1190px;
+    }
+    .main-box{
+        display: block;
+    }
+    .box{
+        width: 55%;
+    margin: auto;
+    margin-top: 20px;
+    height: 260px;
+    }
+    .container{
+        width: 330px;
+    }
+
+
+}
+
+
+/* iphone 6/6s/7 */
+@media only screen and (min-width: 375px) and (max-width: 413px){
+    .max-width{
+        max-width: 370px;
+    }
+    .name1 #nh1 {
+        font-size: 35px;
+    }
+    .name1 #np {
+        font-size: 10px;
+        left: 3px;
+        letter-spacing: 1px;
+        top: -6px;
+    }
+    .name1 #np2 {
+        left: 95px;
+        top: 36px;
+        font-size: 10px;
+        letter-spacing: 1px;
+    }
+    .name1{
+        left: 50px;
+        top: 87px;
+    }
+    .banner{
+        height: 220px;
+        background-color: black;
+    }
+    h2 {
+        font-size: 24px;
+        letter-spacing: 2px;
+    }
+    .icon label {
+        font-size: 10px;
+    }
+    .icon #name {
+        font-size: 9px;
+        margin-bottom: -2px;
+    }
+    .info{
+        height: 280px;
+        padding: 25px 0;
+    }
+    .profile .pro {
+        width: 90%;
+        margin: auto;
+        padding-top: 30px;
+    }
+    h2 {
+        font-size: 20px;
+        letter-spacing: 1px;
+    }
+    .profile .para {
+        font-size: 10px;
+    }
+    .profile{
+        height: 170px;
+    }
+    .edu-h2 {
+        padding-top: 20px;
+    }
+    .main-box {
+        display: block;
+    }
+    .box{
+        width: 60%;
+        height: 270px;
+        margin: auto;
+        margin-top: 15px;
+    }
+    .education{
+        height: 1210px;
+    }
+    .container{
+        width: 300px;
+        margin: auto;
+    }
+    .box .sub-box i {
+        font-size: 40px;
+    }
+    .sub-box-h3 {
+        font-size: 15px;
+    }
+    .sub-box-p {
+        font-size: 10px;
+        margin-top: -8px;
+    }
+    .sub-box-h4 {
+        margin: 18px;
+        font-size: 12px;
+    }
+    .sh1 {
+        font-size: 27px;
+        letter-spacing: 3px;
+    }
+    footer{
+        font-size: 11px;
+    }
+
+
+}
+
+
